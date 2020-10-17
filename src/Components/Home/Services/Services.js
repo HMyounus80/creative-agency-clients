@@ -26,12 +26,12 @@ const serviceData = [
 
 const Services = () => {
     return (
-       <section className="container mt-5 ">
-           <div className="text-center">
+       <section className="container mt-5 mb-5 ">
+           <div className="text-center mt-5 mb-5">
                <h2>Provide awesome <span style={{color: '#7AB259'}}>services</span></h2>
            </div>
            <div className="d-flex justify-content-center">
-               <div className="row">
+               <div className="row mt-5 mb-5">
                    {
                        serviceData.map(service => <ServiceDetails service={service}></ServiceDetails>)
                    }

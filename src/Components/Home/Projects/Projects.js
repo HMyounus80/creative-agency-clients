@@ -1,30 +1,53 @@
 import React from 'react';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
 import './Projects.css';
 import carousel1 from '../../../images/carousel-1.png';
 import carousel2 from '../../../images/carousel-2.png';
 import carousel3 from '../../../images/carousel-3.png';
 import carousel4 from '../../../images/carousel-4.png';
 import carousel5 from '../../../images/carousel-5.png';
-
- 
- 
-const handleDragStart = (e) => e.preventDefault();
- 
-const items = [
-  <img src={carousel1} onDragStart={handleDragStart} className="yours-custom-class" />,
-  <img src={carousel2} onDragStart={handleDragStart} className="yours-custom-class" />,
-  <img src={carousel3} onDragStart={handleDragStart} className="yours-custom-class" />,
-];
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const Projects = () => {
+  const allCarouselPic=[carousel1, carousel2, carousel3, carousel4, carousel5]
+  const responsive = {
+      superLargeDesktop: {
+      
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+      }
+    };
+        
     return (
-    <section style={{backgroundColor: '#111430',marginTop: '70px'}}>
+    <section style={{backgroundColor: '#111430',}} className=" slider mt-5 mb-5">
     <div className="container" >
-        <h2 className=" tex-center text-white mt-3 mb-3" >Here are some of <span style={{color: '#7AB259'}}>our works</span></h2>
-         <AliceCarousel mouseTracking items={items} />
-    
+        <div className="text-center text-white mb-5">
+        <h2>Here are some of <span style={{color: '#7AB259'}}>our works</span></h2>
+        </div>
+        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={5000}
+                    keyBoardControl={true}  dotListClass="custom-dot-list-style" showDots={true}>
+                    {
+                        allCarouselPic.map(carousel=>{
+                            return(
+                                <div>
+                                    <img className='carousel-image' src={carousel} alt=""/>
+                                </div>
+                            )
+                        })
+                    }
+                </Carousel>;
         </div>
     </section>
         

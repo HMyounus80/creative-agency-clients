@@ -27,13 +27,14 @@ const clientsData = [
 ]
 
 const ClientsFeedback = () => {
+    
     return (
-        <section className="container mt-5">
-           <div className="text-center">
+        <section className="container mt-5 mb-5">
+           <div className="text-center mt-5 mb-5">
                <h2>Clients <span style={{color: '#7AB259'}}>Feedback</span></h2>
            </div>
-           <div className="d-flex justify-content-center mt-3">
-               <div className="row">
+           <div>
+               <div className="row d-flex justify-content-center">
                    {
                        clientsData.map(clients => <ClientsDetails clients={clients}></ClientsDetails>)
                    }

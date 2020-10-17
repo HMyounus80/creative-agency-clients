@@ -8,8 +8,8 @@ import netflix from '../../../images/logos/netflix.png';
 
 const ClientLogo = () => {
     return (
-        <section className="container mt-3">
-            <div className=" row d-flex justify-content-center ">
+        <section className="container mt-5 mb-5">
+            <div className=" row d-flex justify-content-center mt-5 mb-5 ">
             <div className="col-sm-4 col-md-2">
                 <img className="img-fluid" src={slack} alt=""/>
             </div>
@@ -20,10 +20,10 @@ const ClientLogo = () => {
                 <img className="img-fluid" src={airbnb} alt=""/>
             </div>
             <div className="col-sm-4 col-md-2">
-                <img className="img-fluid" src={uber} alt=""/>
+                <img className="img-fluid w-50" src={uber} alt=""/>
             </div>
             <div className="col-sm-4 col-md-2">
-                <img className="img-fluid" src={netflix} alt=""/>
+                <img className="img-fluid w-50" src={netflix} alt=""/>
             </div>
             </div>
         </section>
