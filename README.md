@@ -1,23 +1,37 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Creative Agency -- Online IT Service Learning Platfrom
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Creative Agency -- Overview :
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* Get Customer Order Place 
+* See in the Customer Order Service List  
+* Give me The Customer Service Feedback
+* Only Admin Service add, and Service Remove 
+* Only Admin See in The all Customer Service List 
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###  Usage Technology:
 
-### `yarn build`
+* React JS
+* React ROUTER
+* Node JS
+* Express JS
+* Mongo DB
+* React Bootstrap
+* Material UI
+* Firebase Auth
+
+###  Usage Tools:
+
+* Firebase Hosting
+* Firebase Tool
+* Heroku
+* VS Code
+* Git
+* Github
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
